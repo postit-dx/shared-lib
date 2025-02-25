@@ -10,6 +10,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @EntityListeners(AuditingEntityListener.class)
@@ -26,13 +27,15 @@ public class BaseEntity {
     @Column(updatable = false, name = "created_page_id")
     private String created_page_id;
 
-    @Column(name = "last_modified_account_id")
+    @Setter
+	@Column(name = "last_modified_account_id")
     private String last_modified_account_id;
 
     @LastModifiedDate
     @Column(name = "last_modified_date")
     private LocalDateTime last_modified_date;
 
+    @Setter
     @Column(name = "last_modified_page_id")
     private String last_modified_page_id;
 }
