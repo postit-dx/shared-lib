@@ -1,5 +1,6 @@
 package com.postit.sharedlibs.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,6 +13,9 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @SuperBuilder
 public class RequestDefaultData {
+	@NotBlank
 	private String accountId;
+
+	@NotBlank
 	private String pageId;
 }
