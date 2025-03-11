@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name": "openapi",
+      "type": "com.postit.sharedlibs.config.SwaggerProperties",
+      "sourceType": "com.postit.sharedlibs.config.SwaggerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "openapi.service-url",
+      "type": "java.lang.String",
+      "description": "API 서버 URL",
+      "sourceType": "com.postit.sharedlibs.config.SwaggerProperties"
+    },
+    {
+      "name": "openapi.title",
+      "type": "java.lang.String",
+      "description": "API 문서 제목",
+      "sourceType": "com.postit.sharedlibs.config.SwaggerProperties",
+      "defaultValue": "API Documentation"
+    },
+    {
+      "name": "openapi.description",
+      "type": "java.lang.String",
+      "description": "API 문서 설명",
+      "sourceType": "com.postit.sharedlibs.config.SwaggerProperties",
+      "defaultValue": "API 문서"
+    },
+    {
+      "name": "openapi.version",
+      "type": "java.lang.String",
+      "description": "API 버전",
+      "sourceType": "com.postit.sharedlibs.config.SwaggerProperties",
+      "defaultValue": "v0.0.1"
+    }
+  ],
+  "hints": []
+}

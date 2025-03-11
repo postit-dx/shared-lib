@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan({"com.postit.sharedlibs"})
+@ComponentScan({"com.postit.sharedlibs.*"})
 @EntityScan({"com.postit.sharedlibs.entity"})
 public class AutoConfig {
 }
