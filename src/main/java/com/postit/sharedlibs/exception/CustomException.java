@@ -1,6 +1,6 @@
 package com.postit.sharedlibs.exception;
 
-import com.postit.sharedlibs.domain.ErrorCode;
+import org.springframework.http.HttpStatus;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -8,5 +8,6 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public abstract class CustomException extends RuntimeException {
-	private final ErrorCode errorCode;
+	private final HttpStatus httpStatus;
+	private final String message;
 }
